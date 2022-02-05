@@ -60,5 +60,16 @@ CLI é uma ferramenta que podemos usar no terminal ele da a opcao de instalar o 
 
 O up é para criar e o down é para desfazer
 
+>>ENTITIES ::
+Entidades sao as tabelas do PROJETO
+ORDEM DE EXECUÇÃO :
+Entidade < - > ORM < - > BD {users}
+
+>>>CONSTRUCTOR
+
+---Constructor é um metodo que vai ser executado toda vez que houver uma instancia de classe(new NomeDaClasse())
+
+
+>>>REPOSITÓRIO:::
 
 
