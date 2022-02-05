@@ -52,5 +52,13 @@ O que são ? é um controle de versionamento de tabelas dentro
 da aplicação 
 consegue ter um controle do que foi executado e do que precisa ser executado
 
+>>CLI ::
+CLI é uma ferramenta que podemos usar no terminal ele da a opcao de instalar o typeorm de forma global
+
+
+>>TEMOS NA MIGRATION 2 MÉTODOS : UP E DOWN
+
+O up é para criar e o down é para desfazer
+
 
 
