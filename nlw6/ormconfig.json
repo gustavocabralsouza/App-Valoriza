@@ -1,4 +1,4 @@
 {
     "type": "sqlite",
-    "database": "src/database/database.sqlite"
+    "database": "src/database/database1.sqlite"
 }
