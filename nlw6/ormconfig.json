@@ -1,4 +1,7 @@
 {
     "type": "sqlite",
-    "database": "src/database/database1.sqlite"
+    "database": "src/database/database1.sqlite",
+    "cli":{
+        "migrationsDir": "src/database/migrations"
+    }
 }
