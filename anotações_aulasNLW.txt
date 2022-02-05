@@ -47,3 +47,10 @@ Temos métodos já prontos(como o finone, dentre outros....)
 BD UTILIZADO NO PROJETO VALORIZA ::: TypeORM
 
 
+>>>MIGRATIONS::
+O que são ? é um controle de versionamento de tabelas dentro
+da aplicação 
+consegue ter um controle do que foi executado e do que precisa ser executado
+
+
+
