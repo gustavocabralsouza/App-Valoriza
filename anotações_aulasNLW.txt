@@ -72,4 +72,12 @@ Entidade < - > ORM < - > BD {users}
 
 >>>REPOSITÓRIO:::
 
+Entidade < - > ORM < - > BD 
+
+eu nao consigo diretamente da minha entidade acessar meu bd
+é preciso ter uma nova camada para fazer essa comunicação
+essa camada é o repositorio
+
+
+
 
