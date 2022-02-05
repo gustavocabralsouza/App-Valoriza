@@ -17,4 +17,8 @@ modelo : http://localhost:3000/produtos?name=teclado&description=tecladobom
 
 utilizamos o body params para metodo post, put e path
 
+----BANCO DE DADOS::
+
+
+
 
