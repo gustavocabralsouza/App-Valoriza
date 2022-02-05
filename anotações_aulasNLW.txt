@@ -1,0 +1,20 @@
+tipos de parametros ::
+
+- Routes Params =>  fazem parte da nossa rota(fazer busca por id, por exemplo em uma rota de Produtos)
+
+
+- Query Params => Quando a gente quer fazer um filtro(consulta), por exemplo buscar um produto com nome de teclado
+
+..tem como conceito chave : valor
+diferença dos route params é que ela tem parametros nao obrigatorios
+
+modelo : http://localhost:3000/produtos?name=teclado&description=tecladobom
+
+- Body Params => sao parametros que virao no corpo da nossa requisicao
+
+"name": "teclado",
+"description": "tecladobom"
+
+utilizamos o body params para metodo post, put e path
+
+
