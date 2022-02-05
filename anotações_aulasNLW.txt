@@ -37,7 +37,7 @@ conseguimos automatizar as inserções, os select
 faz o bd reconhecer em nosso codigo um objeto como sendo uma tabela, por exemplo
 
 
---Exemplos de ORM :: 
+--Exemplos de ORM :::
 
 Sequalize, TypeORM(no typescript), Prisma
 
