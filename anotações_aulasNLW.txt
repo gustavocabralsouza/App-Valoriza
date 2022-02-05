@@ -19,6 +19,18 @@ utilizamos o body params para metodo post, put e path
 
 ----BANCO DE DADOS::
 
+>>Tem o drivers do banco de dados:
+ex : Postgress, MySQL, MongoDB
+seria a forma nativa do body
+
+>>QueryBuilders :: Permite que escrevemos nossas Query de forma automatica
+ex : knex
+vantagens :: tem padrões para todos os tipos de body
+
+>>ORM
+:: Object Relation Map 
+- Frameworks que ajudam no mapeamento entre a entidade e o objeto
+
 
 
 
