@@ -31,6 +31,19 @@ vantagens :: tem padrões para todos os tipos de body
 :: Object Relation Map 
 - Frameworks que ajudam no mapeamento entre a entidade e o objeto
 
+eles pegam o nosso codigo(ex codigo em js e transforma ele para uma forma que o bd consiga entender)
 
+conseguimos automatizar as inserções, os select
+faz o bd reconhecer em nosso codigo um objeto como sendo uma tabela, por exemplo
+
+
+--Exemplos de ORM :: 
+
+Sequalize, TypeORM(no typescript), Prisma
+
+Temos métodos já prontos(como o finone, dentre outros....)
+
+
+BD UTILIZADO NO PROJETO VALORIZA ::: TypeORM
 
 
