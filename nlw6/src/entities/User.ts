@@ -26,8 +26,6 @@ import {v4 as uuid} from 'uuid'
     @CreateDateColumn()
     created_at: Date
 
-    @UpdateDateColumn()
-    updated_at: Date
 
     constructor() {
         //nesse if, vai ser para ver toda vez que tiver um novo usuario

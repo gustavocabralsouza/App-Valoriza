@@ -79,5 +79,41 @@ eu nao consigo diretamente da minha entidade acessar meu bd
 essa camada é o repositorio
 
 
+>>>>SERVICES::
+
+Toda aplicacao tem as regras da aplicacao
+ex::
+
+Regras 
+
+Cadastro de Usuarios
+ - Nao é permitido cadastrar mais de um usuario com o mesmo email
+ - Nao é permitido cadastrar usuario sem email
+
+ Cadastro de TAG
+    - nao é permitido cadastrar mais de uma tag com o mesmo nome
+    - nao e permitido cadastrar tag sem nome
+    - nao e permitido o cadsatro por usuarios que nao sejam administradores
+
+Cadastro de elogios
+
+    - nao é permitido um usuario cadastrar um elogio para si
+    - nao é permitido cadastrar elogios para usuarios invalidos
+    - usuario precisa estar autenticado durante a aplicacao
+
+Camada responsavel por fazer toda a validacao ANTES que a requisicao seje enviada ao 
+banco de dados, ou enviar algo ao cliente
+
+
+>>>CONTROLLER::
+
+
+>- server -> controller > service ->
+
+controller vai ser o request e o response 
+vai servir para pegar a informacao do server(da nossa rota) e repassar para o service
+
+
+
 
 
