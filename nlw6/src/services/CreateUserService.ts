@@ -17,7 +17,7 @@ class CreateUserService {
             throw new Error('Email incorrect')
         }
         const usersAlreadyExists = await usersRepository.findOne({
-           email 
+           email
         })
 
         if(usersAlreadyExists){
