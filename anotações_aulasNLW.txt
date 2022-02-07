@@ -119,6 +119,20 @@ vai servir para pegar a informacao do server(da nossa rota) e repassar para o se
 >>_ Controller --> Service (throw new Error)
 Estamos repassando a excessao para a camada acima(nesse caso, é o controller)
 
+Pode utilizar o Try Catch(), porem quando a aplicação ficar muito
+grande já não seria o suficiente usar somente o try catch()
+
+pois o codigo nao ficaria clean
+
+>>>FLUXO DA APLICAÇÃO::
+server > routes > controller > service > repository > entity(model)
+
+
+>>>MIDDWARES:::
+
+São interceptadores que a gente tem dentro de uma requisicao, a gente pode tanto interromper a rota ou continuar ela
+colocando algo novo por meio do middlware
+
 
 
 
