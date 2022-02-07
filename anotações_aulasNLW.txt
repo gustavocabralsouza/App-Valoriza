@@ -114,6 +114,12 @@ controller vai ser o request e o response
 vai servir para pegar a informacao do server(da nossa rota) e repassar para o service
 
 
+>>Tratamento de Excessao ::
+
+>>_ Controller --> Service (throw new Error)
+Estamos repassando a excessao para a camada acima(nesse caso, é o controller)
+
+
 
 
 
