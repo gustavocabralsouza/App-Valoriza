@@ -135,7 +135,9 @@ colocando algo novo por meio do middlware
 
 >>>ETAPAS DE CRIAÇÃO DAS CAMADAS PARA CADA TABELA :
 
-Migrations -> Entities -> Repositories -> 
+Migrations -> Entities -> Repositories -> SERVICES
+
+obs:: É na camada service que a gente faz todas as regras de negocio da nossa aplicação back end
 
 
 
