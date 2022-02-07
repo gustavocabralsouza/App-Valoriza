@@ -128,12 +128,14 @@ pois o codigo nao ficaria clean
 server > routes > controller > service > repository > entity(model)
 
 
->>>MIDDWARES:::
+>>>MIDDLEWARES:::
 
 São interceptadores que a gente tem dentro de uma requisicao, a gente pode tanto interromper a rota ou continuar ela
 colocando algo novo por meio do middlware
 
+>>>ETAPAS DE CRIAÇÃO DAS CAMADAS PARA CADA TABELA :
 
+Migrations -> Entities -> Repositories -> 
 
 
 
