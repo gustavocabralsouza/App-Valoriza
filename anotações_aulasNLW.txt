@@ -157,5 +157,6 @@ nao pode passar dados sensiveis ao PeyLoad
 OBS DE BOA PRATICA :: NUNCA, JAMAIS ARMAZENE SENHAS NO BANCO DE DADOS COMO A SENHA PADRAO MESMO, 
 É PRECISO ENCRIPTOGRAFAR A SENHA
 
-
+Conceito de expiração de token
+refresh token
 

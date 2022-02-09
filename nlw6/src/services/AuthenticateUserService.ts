@@ -35,7 +35,14 @@ class AuthenticateUserService{
         throw new Error("Email/Password incorrect");
       }
       //Se senha esta correta entao Gerar Token
+      const token = sign({
+          email: user.email
+      }, 'fba0c363fb347d4859c5ea379ee46569', {
+        subject: user.id,
+        expiresIn: "1d"
+      })
 
+      return token
 
     }
 }
