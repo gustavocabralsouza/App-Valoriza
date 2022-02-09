@@ -33,7 +33,7 @@ class CreateUserService {
             name,
             email,
             admin,
-            password
+            password: passwordHash
         })
 
         await usersRepository.save(user)

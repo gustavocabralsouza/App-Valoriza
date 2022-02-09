@@ -29,8 +29,7 @@ import {v4 as uuid} from 'uuid'
     @CreateDateColumn()
     created_at: Date
 
-    @UpdateDateColumn()
-    updated_at: Date
+   
 
 
 
