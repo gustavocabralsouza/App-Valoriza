@@ -140,4 +140,13 @@ Migrations -> Entities -> Repositories -> SERVICES -> Controller
 obs:: É na camada service que a gente faz todas as regras de negocio da nossa aplicação back end
 
 
+>>>O QUE É O JWT ??
+
+JSON Web Token, ele permite que fazemos a comunicação entre as requisicao usando um Token
+validar token(se é válido, se expirou etc)
+
+Ele é um token que passamos para nossa requisicao e fazemos a autenticacao
+
+
+
 
