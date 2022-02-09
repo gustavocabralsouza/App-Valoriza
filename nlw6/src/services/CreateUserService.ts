@@ -5,7 +5,8 @@ import { UsersRepositories } from "../repositories/UsersRepositories";
 interface IUserRequest {
     name: string,
     email: string,
-    admin?: boolean
+    admin?: boolean,
+    password: string
 }
 
 class CreateUserService {
