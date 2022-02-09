@@ -147,6 +147,12 @@ validar token(se é válido, se expirou etc)
 
 Ele é um token que passamos para nossa requisicao e fazemos a autenticacao
 
+Ele é divido em 3 partes ::
+- Header : qual o tipo de token, qual o algoritmo que ele usa para fazer a criptografia dos dados
+- PeyLoad : Você passa as informacoes(Como id, nome etc) para o frontend usar esse token
+nao pode passar dados sensiveis ao PeyLoad
+- Verify Signature : tera as base url
+
 
 
 
