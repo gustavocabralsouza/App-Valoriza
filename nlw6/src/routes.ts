@@ -15,4 +15,5 @@ router.post("/users", createUserController.handle)
 router.post("/tags", ensureAdmin,createTagController.handle)
 
 router.post('/login', authenticateUserController.handle)
+
 export { router }
