@@ -25,6 +25,7 @@ class Compliments {
     @JoinColumn({name: "user_sender"})
     @ManyToOne(() => User)
     userSender: User
+    
     @Column()
     user_receiver: string
 
@@ -43,7 +44,7 @@ class Compliments {
     message: string
 
     @CreateDateColumn()
-    create_at: Date
+    created_at: Date
     
     constructor() {
         if(!this.id){
