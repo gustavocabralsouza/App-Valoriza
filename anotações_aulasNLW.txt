@@ -154,5 +154,8 @@ nao pode passar dados sensiveis ao PeyLoad
 - Verify Signature : tera as base url
 
 
+OBS DE BOA PRATICA :: NUNCA, JAMAIS ARMAZENE SENHAS NO BANCO DE DADOS COMO A SENHA PADRAO MESMO, 
+É PRECISO ENCRIPTOGRAFAR A SENHA
+
 
 
