@@ -6,14 +6,13 @@ import { UsersRepositories } from '../repositories/UsersRepositories'
 export async function ensureAdmin(request: Request, response: Response, next: NextFunction){
 
     const {user_id} = request
-    console.log(user_id)
 
     const usersRepositories = getCustomRepository(UsersRepositories)
 
     const {admin} = await usersRepositories.findOne(user_id)
     //Verificar se o usuario é admin pelo middleware
 
-    if(admin) {
+    if(admin) {                 
         return next()
     }
 

@@ -7,17 +7,17 @@ class CreateComplimentController{
         const {
             tag_id,
             user_receiver,
-            user_sender,
             message
         } = request.body
 
+        const {user_id} = request
 
         const createComplimentService = new CreateComplimentService()
 
        const compliments = await createComplimentService.execute({
             tag_id,
             user_receiver,
-            user_sender,
+            user_sender: user_id,
             message
         })
 
