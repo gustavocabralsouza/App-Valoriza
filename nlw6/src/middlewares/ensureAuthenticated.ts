@@ -1,5 +1,5 @@
 import {Request, Response, NextFunction} from 'express'
-
+import {verify} from 'jsonwebtoken'
 
 export function ensureAuthenticated(
     request: Request,
@@ -8,18 +8,32 @@ export function ensureAuthenticated(
 ){
 
     //Receber o token
-    const token = request.headers.authorization
+    const authToken = request.headers.authorization
    
     //validar se o token esta preenchido
-    if(!token) {
+    if(!authToken) {
         return response.status(401).end()
     }
-    
-    // Valiar se token é válido
-    
+
+    //nessa linha o js vai fazer o seguinte:
+    //vai separar a string do token pelo metodo "split"
+    //esse split vai transformar minha string em um vetor de 2 posicoes, separadas pelo espaço em branco 
+    //como a primeira posicao tem a palavra "bearer" e eu nao quero essa palavra no meu token
+    //entao eu coloco [, variavelQueVaiReceberOvalorDaSegundaPosicaoDoVetor]
+
+    const [, token] = authToken.split(" ")
+    console.log(token)
+
+
+    try{
+        // Valiar se token é válido
+        const decode = verify( token,"fba0c363fb347d4859c5ea379ee46569")
+        
+        return next()
+    }catch(err){
+        return response.status(401).end
+    }
+
     // Recuperar informacoes do usuario
-
-    return next()
-
 
 }
