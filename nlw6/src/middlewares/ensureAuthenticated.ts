@@ -26,13 +26,11 @@ export function ensureAuthenticated(
     //entao eu coloco [, variavelQueVaiReceberOvalorDaSegundaPosicaoDoVetor]
 
     const [, token] = authToken.split(" ")
-    console.log(token)
-
 
     try{
         // Valiar se token é válido
         const {sub} = verify( token,"fba0c363fb347d4859c5ea379ee46569") as IPayLoad
-
+        // Recuperar informacoes do usuario
         request.user_id = sub
 
         return next()
@@ -40,7 +38,6 @@ export function ensureAuthenticated(
         return response.status(401).end
     }
 
-    // Recuperar informacoes do usuario
 
 
 }

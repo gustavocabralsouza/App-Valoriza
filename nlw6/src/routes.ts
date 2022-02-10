@@ -15,10 +15,14 @@ const createComplimentController = new CreateComplimentController()
 
 router.post("/users", createUserController.handle)
 
-router.post("/tags", ensureAuthenticated, ensureAdmin,createTagController.handle)
+router.post("/tags", 
+    ensureAuthenticated,
+    ensureAdmin,
+    createTagController.handle
+ )
 
 router.post('/login', authenticateUserController.handle)
 
-router.post('/compliments', createComplimentController.handle)
+router.post('/compliments',ensureAuthenticated, createComplimentController.handle)
 
 export { router }
