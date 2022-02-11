@@ -29,12 +29,12 @@ router.post('/login', authenticateUserController.handle)
 
 router.post('/compliments',ensureAuthenticated, createComplimentController.handle)
 
-router.get('/users/compimets/send', 
+router.get('/users/compliments/send', 
     ensureAuthenticated, 
     listUserSendComplimentsController.handle
  )
- 
-router.get('/users/compimets/receive',
+
+router.get('/users/compliments/receive',
     ensureAuthenticated, 
     listUserReceiveComplimentsController.handle
  )
